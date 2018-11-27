@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from 'antd'
+import {DatePicker} from 'antd'
 
 export default class Page extends React.Component {
   constructor(props) {
@@ -13,6 +14,7 @@ export default class Page extends React.Component {
       <div>
         <p>demo - {config}</p>
         <hr />
+        <DatePicker />
         <Button onClick={() => {
           history.goBack()
         }}>back</Button>

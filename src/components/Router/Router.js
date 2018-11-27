@@ -1,9 +1,9 @@
 import React from "react"
 import {
-  HashRouter as Router,
   Route,
-  Switch,
+  Switch
 } from "react-router-dom";
+
 
 export default class AppRouter extends React.Component {
   static defaultProps = {
@@ -17,11 +17,10 @@ export default class AppRouter extends React.Component {
   render() {
     const { routes } = this.props
     return (
-      <Router>
-        <Switch>
-          {routes.map(this.creatRoute)}
-        </Switch>
-      </Router>
+      <Switch>
+        {routes.map(this.creatRoute)}
+      </Switch>
+              
     )
   }
 
